@@ -6,6 +6,45 @@
     <title>Css selectors</title>
 </head>
 <body>
-    
+    <h1>Registratino Form</h1>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="fullname">Full Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="fullname" name="fullname" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>
+                    <input type="email" id="email" name="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password</label>
+                </td>
+                <td>
+                    <input type="password" id="password" name="password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender:</label>
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
