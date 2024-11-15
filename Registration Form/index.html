@@ -3,45 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css selectors</title>
+    <title>Registration Form</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            background-color: aliceblue;
+            margin: 0;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        table{
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        td{
+            padding: 10px;
+        }
+        label{
+            font-weight: bold;
+        }
+        input[type="submit"]{
+            background-color: rgb(22, 199, 78);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20%;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Registratino Form</h1>
+    <h1>Registration Form</h1>
     <form action="#" method="post">
         <table>
             <tr>
+                <td><label for="fullname">Full Name :</label></td>
+                <td><input type="fullname" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email :</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password :</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="confirm_password">Confirm Password:</label></td>
+                <td><input type="confirm_password" name="confirm_password" id="confirm_password"></td>
+            </tr>
+            <tr>
+                <td><label>Gender :</label></td>
                 <td>
-                    <label for="fullname">Full Name:</label>
-                </td>
-                <td>
-                    <input type="text" id="fullname" name="fullname" required>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Others</label>
                 </td>
             </tr>
             <tr>
-                <td><label for="email">Email</label></td>
+                <td><label for="birthdate">Date of Birth</label></td>
+                <td><input type="date" id="birthdate" name="birthdate" required></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country :</label></td>
+                <td><select id="country" name="country" required>
+                <option value="">Select a Country</option>
+                <option value="usa">India</option>
+                <option value="uk">United kingdom</option>
+            </select></td>
+            <tr>
                 <td>
-                    <input type="email" id="email" name="email" required>
+                    <label for="interest">Interest :</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="sports" name="interest" value="sports">
+                    <label for="sports">Sports</label>
+                    <input type="checkbox" id="reading" name="interest" value="reading">
+                    <label for="reading">Reading</label>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <label for="password">Password</label>
-                </td>
-                <td>
-                    <input type="password" id="password" name="password" required>
-                </td>
+                <td><label for="bio">Bio :</label></td>
+                <td><textarea name="bio" id="bio" rows="4"></textarea></td>
             </tr>
             <tr>
-                <td>
-                    <label>Gender:</label>
-                </td>
-                <td>
-                    <input type="radio" id="male" name="gender" value="male" required>
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female" required>
-                    <label for="female">Female</label>
-                    <input type="radio" id="other" name="gender" value="other" required>
-                    <label for="other">Other</label>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Register">
                 </td>
             </tr>
         </table>
