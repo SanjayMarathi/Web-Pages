@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UltraEdit Website</title>
+    <style>
+      body {
+        font-family: "Segoe UI";
+      }
+
+      .navUL {
+        margin: 20px;
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        margin-right: 10%;
+      }
+
+      .navLI {
+        margin: 20px;
+        cursor: pointer;
+      }
+
+      .image {
+        margin-right: 25%;
+        height: 55px;
+      }
+
+      .langLogo {
+        width: 30px;
+        height: 30px;
+        align-self: center;
+      }
+
+      .search-button {
+        height: 30px;
+        width: 30px;
+        align-self: center;
+        margin: 10px;
+      }
+      select {
+        border: none;
+      }
+
+      .content {
+        margin-top: 40px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+      }
+      .inside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .inside h2 {
+        font-size: 48px;
+        margin: 20px;
+        font-weight: 400;
+      }
+      .inside h3 {
+        text-align: center;
+        font-size: 24px;
+        flex-wrap: wrap;
+        width: 1000px;
+        justify-content: center;
+        font-weight: 350;
+      }
+      .inside button {
+        background-color: #00b6d1;
+        width: 200px;
+        height: 40px;
+        display: block;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-weight: 400;
+        font-size: medium;
+      }
+      .container {
+        margin-top: 40px;
+        display: grid;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 300px 300px 300px;
+        justify-items: center;
+        justify-self: center;
+        align-content: center;
+        row-gap: 20px;
+        column-gap: 20px;
+      }
+      @media (max-width: 480px) {
+        .container {
+          grid-template-columns: repeat(1, 1fr); 
+        }
+      }
+      .box {
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        height: 160px;
+        align-items: center;
+        padding: 20px;
+        background-color: whitesmoke;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+      .exe {
+        height: 30px;
+        width: 150px;
+        background-color: #5cb85c;
+        font-size: medium;
+        cursor: pointer;
+        margin-top: 40px;
+        text-align: center;
+        padding: 4px 8px;
+        border-radius: 20px;
+      }
+      .exe a {
+        text-decoration: none;
+        color: aliceblue;
+        font-size: medium;
+        font-weight: 500;
+      }
+      .hash {
+        font-size: 9px;
+        width: 200px;
+        height: 20px;
+        margin-top: 20px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        max-width: 80%;
+        text-align: center;
+        font-weight: lighter;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="navUL">
+        <img
+          class="image"
+          src="/UltraEdit Website/images/UE-Logo-1.webp"
+          alt=""
+        />
+        <li class="navLI">
+          Products
+          <select name="" id=""></select>
+        </li>
+        <li class="navLI">
+          For Business
+          <select name="" id=""></select>
+        </li>
+        <li class="navLI">
+          Resources
+          <select name="" id=""></select>
+        </li>
+        <li class="navLI">
+          Support
+          <select name="" id=""></select>
+        </li>
+        <li class="navLI">
+          Our Company
+          <select name="" id=""></select>
+        </li>
+        <img
+          class="langLogo"
+          src="/UltraEdit Website/images/language logo.png"
+          alt="Choosing Language"
+        />
+        <img
+          class="search-button"
+          src="/UltraEdit Website/images/search image.png"
+          alt="Search button"
+        />
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="inside">
+        <h2>
+          Downlaod
+          <span style="font-weight: 700">UltraEdit</span> for Windows
+        </h2>
+        <img src="/UltraEdit Website/images/Reviews.png" alt="Reviews" />
+      </div>
+      <div class="inside">
+        <h3>
+          Download and try UltraEdit before you buy it! This download includes
+          the full Windows version of the text editor.
+        </h3>
+        <button>Download UE Windows</button>
+      </div>
+      <div class="container">
+        <div class="box">
+          English
+          <div class="exe">
+            <a href="/UltraEdit Website/exe/ue_english_64.exe"
+              >DownLoad 64-bit</a
+            >
+          </div>
+          <div class="hash">
+            B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E
+          </div>
+        </div>
+        <div class="box">
+          Deutsch
+          <div class="exe">
+            <a href="/UltraEdit Website/exe/ue_english_64.exe"
+              >DownLoad 64-bit</a
+            >
+          </div>
+          <div class="hash">
+            B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E
+          </div>
+        </div>
+        <div class="box">
+          Italiano
+          <div class="exe">
+            <a href="/UltraEdit Website/exe/ue_english_64.exe"
+              >DownLoad 64-bit</a
+            >
+          </div>
+          <div class="hash">
+            B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E
+          </div>
+        </div>
+        <div class="box">
+          Espanol
+          <div class="exe">
+            <a href="/UltraEdit Website/exe/ue_english_64.exe"
+              >DownLoad 64-bit</a
+            >
+          </div>
+          <div class="hash">
+            B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E
+          </div>
+        </div>
+        <div class="box">
+          Francais
+          <div class="exe">
+            <a href="/UltraEdit Website/exe/ue_english_64.exe"
+              >DownLoad 64-bit</a
+            >
+          </div>
+          <div class="hash">
+            B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E
+          </div>
+        </div>
+        <div class="box">
+          Portugues brasileiro
+          <div class="exe">
+            <a href="/UltraEdit Website/exe/ue_english_64.exe"
+              >DownLoad 64-bit</a
+            >
+          </div>
+          <div class="hash">
+            B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
