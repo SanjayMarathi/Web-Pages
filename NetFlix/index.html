@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+          sans-serif;
+      }
+
+      .main {
+        background-image: url(/NetFlix/assets/images/NetflixBG.jpg);
+        height: 100vh;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .main::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+      }
+
+      .main > * {
+        position: relative;
+        z-index: 2;
+      }
+
+      .main .box {
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+      }
+
+      nav img {
+        height: 100px;
+        width: 200px;
+      }
+
+      @media (max-width: 800px) {
+        nav img {
+          height: 100px;
+          width: 120px;
+        }
+      }
+
+      nav {
+        max-width: 80vw;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .buttons {
+        display: flex;
+      }
+      .button {
+        margin: 5px;
+        font-size: larger;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        color: white;
+      }
+
+      .LangButton {
+        border: 1px solid;
+        width: 150px;
+        height: 40px;
+        background-color: black;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .SignIn {
+        width: 100px;
+        height: 42px;
+        background-color: hsl(10, 88%, 52%);
+        cursor: pointer;
+      }
+      .container {
+        height: 50vh;
+        width: 100vw;
+        margin-top: 100px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .MainContent {
+        color: white;
+        width: 100vw;
+        font-size: 4rem;
+        font-weight: 1000;
+        max-width: 800px;
+        word-wrap: break-word;
+        text-align: center;
+        margin: 10px;
+      }
+
+      .priceContent {
+        color: white;
+        font-size: 24px;
+        margin: 20px;
+        font-weight: 700;
+        margin: 10px;
+      }
+
+      .aboutEmail {
+        color: white;
+        font-size: 24px;
+        margin: 20px;
+        font-weight: 500;
+        margin: 20px;
+      }
+
+      .setEmail {
+        border: 1px solid silver;
+        background-color: black;
+        height: 7vh;
+        width: 20vw;
+        border-radius: 5px;
+      }
+
+      .setEmail::placeholder {
+        color: silver;
+        font-size: 20px;
+        padding: 20px;
+      }
+
+      @media (max-width: 800px) {
+        .setEmail::placeholder {
+          color: silver;
+          font-size: 15px;
+          padding: 20px;
+        }
+      }
+
+      .getStarted {
+        border: 1px solid red;
+        background-color: red;
+        width: fit-content;
+        height: 7vh;
+        margin-left: 10px;
+        border-radius: 5px;
+        font-size: x-large;
+        color: white;
+        padding: 0px 20px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      .boxes{
+        display: flex;
+        margin: 30px;
+      }
+
+      .langLogo{
+        height: 20px;
+        width: 20px;
+        margin: 10px;
+      }
+      
+      .dropdownlogo{
+        height: 20px;
+        width: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <span
+          ><img src="/NetFlix/assets/svg/NetFlix Logo.svg" alt="NetFlix Logo"
+        /></span>
+        <div class="buttons">
+          <div class="LangButton button"><img class="langLogo" src="/NetFlix/assets/svg/Language Logo.svg" alt="Language logo where languages are changed"> English <img class="dropdownlogo" src="/NetFlix/assets/svg/Dropdown Logo.svg" alt=""></div>
+          <div class="SignIn button">Sign In</div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="MainContent">Unlimited movies, TV shows and more</div>
+        <div class="priceContent">Starts at ₹149. Cancel at any time.</div>
+        <div class="aboutEmail">
+          Ready to watch? Enter your email to create or restart your membership.
+        </div>
+        <div class="boxes">
+          <input
+            class="setEmail"
+            type="email"
+            name="email"
+            placeholder="Email address"
+            required
+          />
+          <button class="getStarted" type="submit">Get Started ></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
